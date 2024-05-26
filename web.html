@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FELLA website</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+
+<header class="header">
+
+    <div class="header-1">
+
+        <a href="#home" class="logo"><i class="fa fa-book"></i> FELLA</a>
+        
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="search here...." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="#" id="favourite"  class="fas fa-heart"></a>
+        <a id="cart"  class="fas fa-shopping-cart"></a>
+        <div id="login-btn" class="fas fa-user"></div>
+    </div>
+
+    </div>
+
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#featured" >features</a>
+            <a href="#newarrived" >What's New</a>
+            <a href="#review" >review</a>
+            <a href="#about" >about</a>
+        </nav>
+    </div>
+
+</header>
+
+<!--bottom navbar-->
+
+<nav class="bottom-navbar">
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#featured" class="fas fa-list"></a>
+    <a href="#newarrived" class="fas fa-tags"></a>
+    <a href="#review" class="fas fa-comment"></a>
+    <a href="#about" class="fas fa-info"></a>
+</nav>
+
+<!--login form-->
+
+<div class="login-form-container">
+
+    <div id="close-login-btn" class="fas fa-times"></div>
+
+
+
+    <form action="">
+        <h3>sign in</h3>
+        <span>username</span>
+        <input type="email" name="" class="box" placeholder="enter your email" id="">
+        <span>password</span>
+        <input type="password" name="" class="box" placeholder="enter your password" id="">
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me"> remember me</label>
+        </div>
+        <input type="submit" value="sign in" class="btn">
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">create one</a></p>
+    </form>
+</div>
+
+
+
+
+<section class="home" id="home">
+
+    <div class="row">
+
+    <div class="content">
+        <h3>up to 75% off<br></h3>
+        <p>Don't miss out—our incredible discounts end in December! Visit us now before it's too late!</p>
+        <a href="#featured" class="btn">shop now</a>
+    </div>
+    
+    <div class=" swiper books-slider">
+        <div class="swiper-wrapper">
+            <a href="#" class="swiper-slide"><img src="/png/dosa.png" alt=""></a>
+            <a href="#" class="swiper-slide"><img src="/png/eblys.png" alt=""></a>
+            <a href="#" class="swiper-slide"><img src="/png/aott.png" alt=""></a>
+            <a href="#" class="swiper-slide"><img src="/png/gantungg.png" alt=""></a>
+            <a href="#" class="swiper-slide"><img src="/png/kasyah.png" alt=""></a>
+            <a href="#" class="swiper-slide"><img src="/png/merdeka.png" alt=""></a>
+        </div>
+        <img src="/png/stand.png" class="stand" alt="">
+    </div>
+
+    </div>
+
+</section>
+
+<!-- icons section-->
+<section class="icons-container">
+
+    <div class="icons">
+        <i class="fas fa-plane"></i>
+        <div class="content">
+        <h3>free shipping</h3>
+        <p>order overs RM60</p>
+    </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-lock"></i>
+        <div class="content">
+        <h3>secure payment</h3>
+        <p>100% secure payment</p>
+    </div>
+    </div>
+
+
+    <div class="icons">
+        <i class="fas fa-redo-alt"></i>
+        <div class="content">
+        <h3>easy return</h3>
+        <p>7 days returns</p>
+    </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-headset"></i>
+        <div class="content">
+        <h3>24/7 support</h3>
+        <p>call us anytime</p>
+    </div>
+    </div>
+
+</section>
+
+
+<!--featured ssection-->
+
+<section class="featured" id="featured">
+
+    <h1 class="heading"><span>featured product</span> </h1>
+
+    <div class="swiper featured-slider">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box" data-id="1" data-name="correction tape" data-price="3.50">
+            <div class="icons">
+                <a href="#" class="fas fa-search"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="/png/1.png" alt="">
+            </div>
+            <div class="content">
+                <h3>correction tape</h3>
+                <div class="price">RM 3.50<span> RM 7.00</span></div>
+                <button class="btn" onclick="addToCart(1, 'correction tape', 3.50)">add to cart</button>
+            </div>
+            </div>
+
+            <div class="swiper-slide box"  data-id="2" data-name="colour pencil" data-price="9.99">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="/png/2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>colour pencil <small></small></h3>
+                    <div class="price">RM 9.99<span> RM 16.99</span></div>
+                    <button class="btn" onclick="addToCart(2, 'colour pencil', 9.99)">add to cart</button>
+                </div>
+                </div>
+            
+            <div class="swiper-slide box" data-id="3" data-name="colour pencil small" data-price="15.99">
+            <div class="icons">
+                <a href="#" class="fas fa-search"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="/png/3.png" alt="">
+            </div>
+            <div class="content">
+                <h3>colour pencil large</h3>
+                <div class="price">RM 15.99<span> 20.99</span></div>
+                <button class="btn" onclick="addToCart(3, 'color pencil large', 15.99)">add to cart</button>
+            </div>
+            </div>
+
+            <div class="swiper-slide box" data-id="4" data-name="pencil mechanical" data-price="5.99">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="/png/4.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>pencil mechanical</h3>
+                    <div class="price">RM 5.99<span> 10.99</span></div>
+                    <button class="btn" onclick="addToCart(4, 'pencil mechanical', 5.99)">add to cart</button>
+                </div>
+                </div>
+
+            <div class="swiper-slide box" data-id="5" data-name="notebook colourful" data-price="13.20">
+            <div class="icons">
+                <a href="#" class="fas fa-search"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="/png/5.png" alt="">
+            </div>
+            <div class="content">
+                <h3>notebook colourful</h3>
+                <div class="price">RM 13.20<span> 20.99</span></div>
+                <button class="btn" onclick="addToCart(5, 'notebook colourful', 13.20)">add to cart</button>
+            </div>
+            </div>
+
+            <div class="swiper-slide box" data-id="6" data-name="twilight notebook" data-price="15.00">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="/png/6.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>twilight notebook</h3>
+                    <div class="price">RM 15.00<span> RM 21.99</span></div>
+                    <button class="btn" onclick="addToCart(6, 'twilight', 15.00)">add to cart</button>>
+                </div>
+                </div>
+            
+            <div class="swiper-slide box" data-id="7" data-name="stapler gun" data-price="25.00">
+            <div class="icons">
+                <a href="#" class="fas fa-search"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="/png/7.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Stapler gun </h3>
+                <div class="price">RM 25.00<span> RM 29.99</span></div>
+                <button class="btn" onclick="addToCart(7, 'stapler gun', 25.00)">add to cart</button>
+            </div>
+            </div>
+
+            <div class="swiper-slide box" data-id="8" data-name="tack it" data-price="6.00">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="/png/8.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>tack it</h3>
+                    <div class="price">RM 6.00<span> RM 10.99</span></div>
+                    <button class="btn" onclick="addToCart(8, 'tack it', 6.00)">add to cart</button>
+            </div>
+            </div>
+
+            <div class="swiper-slide box" data-id="9" data-name="stapler" data-price="9.99">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="/png/9.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>stapler</h3>
+                    <div class="price">RM 9.99<span> 15.99</span></div>
+                    <button class="btn" onclick="addToCart(9, 'stapler', 9.99)">add to cart</button>
+            </div>
+            </div>
+
+            <div class="swiper-slide box" data-id="10" data-name="liquid" data-price="5.00">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="/png/10.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>liquid</h3>
+                    <div class="price">RM 5.00<span> 8.50</span></div>
+                    <button class="btn" onclick="addToCart(10, 'liquid', 5.00)">add to cart</button>
+               </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    
+</section>
+
+<!--newsletter-->
+
+<section class="newsletter">
+
+    <form action="">
+        <h3>subscribe for the latest update</h3>
+        <input type="email" name="" placeholder="Enter your email" id="" class="box">
+        <input type="submit" value="subscribe" class="btn">
+    </form>
+</section>
+
+<!--section for newArrival-->
+
+<section class="arrivals" id="newarrived">
+    <h1 class="heading"><span>#what's new </span> </h1>
+
+    <div class=" swiper arrivals-slider">
+        <div class="swiper-wrapper">
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="/png/14.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>highliter</h3>
+                    <div class="price">RM 7.99 <span>RM12.99</span></div>
+                    
+                    
+                </div>   
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="/png/13.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>black notebook</h3>
+                    <div class="price">RM 12.99 <span>RM18.99</span></div>
+                    
+                </div>   
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="/png/12.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>ink</h3>
+                    <div class="price">RM 9.99 <span>RM12.99</span></div>
+                    
+                </div>   
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="/png/11.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>sharpener</h3>
+                    <div class="price">RM 12.00 <span>RM117.99</span></div>
+                    
+                </div>   
+            </a>
+        </div>
+    </div> 
+</section>
+
+<!--feedback section-->
+
+<section class="reviews" id="review">
+
+    <h1 class="heading"> <span>client's reviews</span></h1>
+
+    <div class="reviews-slider">
+        <div class="wrap">
+            <div class="box">
+                <img src="/png/testimonial-perfil-1.png" alt="">
+                <h3>farah mail</h3>
+                <p> sangat membantu dan sangat recommended to my friend</p>
+                <div class="start">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="/png/testimonial-perfil-2.png" alt="">
+                <h3>john blend</h3>
+                <p> memang sgt terbaik ini company,memudahkan dan menyenangkan yg paling
+                    penting the owner</p>
+                <div class="start">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="/png/testimonial-perfil-3.png" alt="">
+                <h3>rokiah ahmad</h3>
+                <p> sangat membantu dan sangat recommended to my friend</p>
+                <div class="start">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h1 class="heading"> <span>About us</span></h1>
+    <h2>About FELLA</h2>
+    <p>Welcome to FELLA, where creativity comes alive.</p>
+    <p>Nestled in the heart of the city, FELLA is more than just a stationery shop—it's a 
+        sanctuary for artists, writers, and dreamers. With a passion for the finer details 
+        and a commitment to quality, FELLA offers an inspiring array of products that transform 
+        everyday moments into extraordinary experiences.</p>
+
+    <h3>Our Story</h3>
+    <p>FELLA was founded by Felix Lane, a dedicated artist with a vision. Felix believed that
+     the tools we use to create should be as inspiring as the work itself. His dream was to 
+     build a place where people could find not only the finest stationery but also a sense of 
+     community and inspiration. This vision came to life with FELLA, named after Felix Lane's initials
+    and symbolizing the friendly, welcoming spirit of our shop.</p>
+
+    <h3>Our Community</h3>
+    <p>FELLA is more than a store—it's a hub for creativity. We regularly host workshops 
+       and events that bring people together to learn, create, and share. Whether you're
+       attending a calligraphy class, participating in a watercolor workshop, or joining a 
+       storytelling evening, you'll find a supportive and inspiring community at FELLA.</p>
+
+    <h3>Our Promise</h3>
+    <p>At FELLA, we believe in the power of creativity to transform lives. Our mission is 
+       to provide you with the tools and inspiration to express yourself and bring your 
+       ideas to life. We are committed to offering high-quality products and exceptional 
+       service, ensuring that every visit to FELLA is a delightful and inspiring experience.</p>
+    <p><br><br>Join us at FELLA and discover a world where creativity knows no bounds. Whether you're
+         a seasoned artist or just beginning your creative journey, we invite you to explore, 
+         create, and be inspired.</p>
+
+</section>
+
+<!--section footer-->
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Customer Service</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i>Contact us</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>order tracking</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>return & exchange</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>shipping</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+                <a href="#home"><i class="fas fa-arrow-right"></i> home</a>
+                <a href="#featured"><i class="fas fa-arrow-right"></i> featured</a>
+                <a href="#newarrived"><i class="fas fa-arrow-right"></i> what's new</a>
+                <a href="#review"><i class="fas fa-arrow-right"></i> review</a>
+                <a href="#about"><i class="fas fa-arrow-right"></i> about</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+                <a href="#"><i class="fas fa-phone"></i> +60 0144671753</a>
+                <a href="#"><i class="fas fa-envelope"></i> fella@gmail.com</a>
+        </div>
+                
+    </div>
+
+    <div class="share">
+            <a href="https://www.facebook.com/"class="fab fa-facebook-f"></a>
+            <a href="https://x.com/?login=" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/" class="fab fa-instagram"></a>    
+    </div>
+
+    <div class="credit">created by <span> fell sdn bhd</span> | all rights reserved!</div>
+
+</section>
+
+<div class="cart-content">
+
+    <div id="close-cart-content" class="fas fa-times"></div>
+
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items">
+        <!-- Cart items will be dynamically added here -->
+
+        <li class="cart-item">Product Name - Price</li>
+    </ul>
+    <div class="total">
+        Total: RM <span id="cart-total">0.00</span>
+    </div>
+    <button id="purchase-btn" >Purchase</button> 
+</div>
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
